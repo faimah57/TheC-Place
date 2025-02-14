@@ -1,18 +1,9 @@
-## Getting Started
+## Language
+    The language that used to is Java from the Netbeans program.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Challenge 1: hello world
+-Inputs With a Storing Varaible
+    In the first part of the challenge it ask to print name that is string input without using additional variable that stores the user name. To accomplish this is by using string input method "input.next()" with Scanner library in the second printing line, so it takes the input name and immediatly printing it.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+-Different Greetings 
+    In the second part of the challenge that asks to print different greeting next to user name from the first part of the challenge. To accomplish this we needed to use Random library and array that has list of different greetings, and using random varaible that is store in "gre" to pick and index of array that hold the greeting and printing it next to user name. 
