@@ -1,0 +1,47 @@
+<!--
+create a program count the character of string input and print the number of character in that input print the input as output as well
+if user entered noting message to write a string and make user enter again
+use a graphical user interface for character counter update
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>character counter</title>
+  </head>
+  <body>
+    <h1>Welcome to character counter program</h1>
+
+    <!--form of the character program-->
+    <form id="stringForm">
+      <label for="userInput">Enter a string:</label>
+      <input type="text" id="userInput" placeholder="Type something here..." />
+      <button type="button" onclick="checkString()">Submit</button>
+    </form>
+    <div id="message" class="error"></div>
+    <div id="result" class="result"></div>
+
+    <script>
+      function checkString() {
+        // Get the input value
+        const userInput = document.getElementById("userInput").value.trim();
+
+        // Get the message and result elements
+        const message = document.getElementById("message");
+        const result = document.getElementById("result");
+
+        // Clear previous messages
+        message.textContent = "";
+        result.textContent = "";
+
+        // Check if the input is empty
+        if (userInput === "") {
+          message.textContent = "You must enter something!";
+        } else {
+          // Display the string and its length
+          result.textContent = `${userInput} has ${userInput.length} characters.`;
+        }
+      }
+    </script>
+  </body>
+</html>
